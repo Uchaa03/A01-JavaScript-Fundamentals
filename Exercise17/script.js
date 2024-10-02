@@ -1,15 +1,18 @@
 
 let cont = 0
 let age
+let input
 
 for (let i = 0;i < 5; i++) {
-    age = Number(prompt("Enter your age"));
-    if (isNaN(age)){
-        alert("You don\'t introduce any age")
-    }else{
+    //Check if the values are Numbers
+    input = prompt("Enter your age");
+    age = Number(input);
+    if (input === `${age}`){
         if (age >= 18){
             ++cont
         }
+    }else{
+        alert("You don\'t introduce any age")
     }
 }
 

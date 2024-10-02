@@ -7,10 +7,12 @@
 
 //Advanced with checking values
 let num
+let input
 
 while (true) {
-    num = Number(prompt("Enter a number"))
-    if (isNaN(num)){
+    input = prompt("Enter a number")
+    num = Number(input)
+    if (input !== `${num}`){
         alert("Please enter a real number")
     }else{
         if (num < 0){

@@ -1,14 +1,12 @@
-let num = Number(prompt("Enter a number"));
-let str
+let input = prompt("Enter a Number");
+let num = Number(input);
 let result = 0
 
 //For check if the value is a number
-if (!isNaN(num)) {
-    //Convert to string for run in a loop
-    str = String(num);
-    for (let i = 0; i < str.length; i++) {
+if (input === `${num}`) {
+    for (let i = 0; i < input.length; i++) {
         //Convert array string to number for addition
-        result += Number(str[i]);
+        result += Number(input[i]);
     }
     alert(`The addition of the numbers introduced are: ${result}`);
 }else alert('ERROR, Please enter a number!!');
